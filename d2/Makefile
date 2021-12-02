@@ -1,4 +1,4 @@
-NAME = dive
+NAME = a.out
 SOURCES = main.c
 OBJECTS = $(SOURCES:.c=.o)
 

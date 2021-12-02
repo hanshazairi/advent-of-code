@@ -1,4 +1,4 @@
-NAME = sonar_sweep
+NAME = a.out
 SOURCES = main.c
 OBJECTS = $(SOURCES:.c=.o)
 
