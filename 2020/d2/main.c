@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:04:54 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/12/02 18:53:01 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/12/03 20:48:43 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 #include <stdlib.h>
 #include <string.h>
 
-static void	first(char **argv)
+static void	part_1(char **argv)
 {
 	int	i;
 	int	j;
-	int	range[2];
 	int	ret;
 	int	tmp;
+	int	range[2];
 
 	i = 0;
 	ret = 0;
-	while (argv[i + 3])
+	while (argv[i])
 	{
 		j = 0;
 		tmp = 0;
@@ -40,11 +40,11 @@ static void	first(char **argv)
 	printf("%d\n", ret);
 }
 
-static void	second(char **argv)
+static void	part_2(char **argv)
 {
 	int	i;
-	int	range[2];
 	int	ret;
+	int	range[2];
 
 	i = 0;
 	ret = 0;
@@ -64,7 +64,7 @@ static void	second(char **argv)
 int	main(int argc, char **argv)
 {
 	(void)argc;
-	first(argv + 1);
-	second(argv + 1);
+	part_1(argv + 1);
+	part_2(argv + 1);
 	return (0);
 }
