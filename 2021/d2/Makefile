@@ -8,6 +8,9 @@ CFLAGS = -Wall -Wextra -Werror
 run: all
 	./$(NAME) `cat input.txt`
 
+test: all
+	./$(NAME) `cat input_test.txt`
+
 all: $(NAME)
 
 $(NAME): $(OBJECTS)

@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 19:12:34 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/12/02 23:26:13 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/12/03 20:50:52 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 static int	check(char **argv, int r, int d)
 {
-	int	len;
-	int	ret;
 	int	x;
 	int	y;
+	int	len;
+	int	ret;
 
 	x = 0;
 	y = 0;
@@ -36,7 +36,7 @@ static int	check(char **argv, int r, int d)
 	return (ret);
 }
 
-static void	first(char **argv)
+static void	part_1(char **argv)
 {
 	int	ret;
 
@@ -44,7 +44,7 @@ static void	first(char **argv)
 	printf("%d\n", ret);
 }
 
-static void	second(char **argv)
+static void	part_2(char **argv)
 {
 	long	ret[5];
 
@@ -56,10 +56,11 @@ static void	second(char **argv)
 	printf("%ld\n", ret[0] * ret[1] * ret[2] * ret[3] * ret[4]);
 }
 
+/* --- Day 3: Toboggan Trajectory --- */
 int	main(int argc, char **argv)
 {
 	(void)argc;
-	first(argv + 1);
-	second(argv + 1);
+	part_1(argv + 1);
+	part_2(argv + 1);
 	return (0);
 }

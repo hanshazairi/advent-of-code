@@ -6,14 +6,14 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 16:28:59 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/12/02 17:05:38 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/12/03 20:38:27 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-static void	first(char **argv)
+static void	part_1(char **argv)
 {
 	int	i;
 	int	j;
@@ -35,7 +35,7 @@ static void	first(char **argv)
 	}
 }
 
-static void	second(char **argv)
+static void	part_2(char **argv)
 {
 	int	i;
 	int	j;
@@ -68,7 +68,7 @@ static void	second(char **argv)
 int	main(int argc, char **argv)
 {
 	(void)argc;
-	first(argv + 1);
-	second(argv + 1);
+	part_1(argv + 1);
+	part_2(argv + 1);
 	return (0);
 }

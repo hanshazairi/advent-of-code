@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:02:04 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/12/03 20:28:57 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/12/03 20:52:28 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,8 +95,8 @@ static void	part_1(int argc, char **argv)
 static void	part_2(char **argv)
 {
 	char		*endptr;
-	const long	o2_rating = strtol(get_rating(argv, 1), &endptr, 2);
 	const long	co2_rating = strtol(get_rating(argv, 0), &endptr, 2);
+	const long	o2_rating = strtol(get_rating(argv, 1), &endptr, 2);
 
 	printf("%ld\n", o2_rating * co2_rating);
 }
