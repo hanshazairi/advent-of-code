@@ -27,4 +27,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: run all clean fclean re
+.PHONY: run test all clean fclean re
