@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/04 12:44:23 by hbaddrul          #+#    #+#             */
-/*   Updated: 2021/12/05 07:21:35 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2021/12/06 02:21:25 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int	main(int argc, char **argv)
 	}
 	part_1_and_2(argc - 2, argv[1], boards, bingos);
 	i = -1;
-	while (++i < argc / 25)
+	while (++i < (argc - 2) / 25)
 		free(boards[i]);
 	free(boards);
 	free(bingos);
